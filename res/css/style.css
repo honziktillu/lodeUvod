@@ -1,0 +1,47 @@
+#board, #boats-selection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  max-width: 300px;
+}
+
+.tile, .boats-selection {
+  border: 2px solid black;
+  flex: 0 0 32%;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.red-boat {
+    background-color: red;
+}
+
+.green-boat {
+    background-color: green;
+}
+
+.blue-boat {
+    background-color: blue;
+}
+
+.selected-boat {
+    border: 2px solid yellow;
+}
+
+.boats-selection, .tile {
+    transition: .1s border ease;
+}
+
+.boats-selection:hover {
+    border: 2px solid yellow;
+}
+
+.tile:hover {
+    border: 2px solid orange;
+}
+
+.selected-tile {
+    border: 2px solid orange;
+}
